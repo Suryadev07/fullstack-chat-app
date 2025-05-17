@@ -36,7 +36,7 @@ export const signup = async (req,res) => {
             await newUser.save();
 
             res.status(201).json({ 
-                _id : newUser.id,
+                _id : newUser._id,
                 fullName: newUser.fullName,
                 email: newUser.email,
                 profilePic: newUser.profilePic
